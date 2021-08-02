@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@1,700&family=Hachi+Maru+Pop&family=Handlee&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="salesBody">
+    <header>
+        
+        <div class="sec-nav">
+            <div class="call-time">
+                <span id="call">
+                    <img src="https://image.shutterstock.com/image-vector/phone-icon-vector-call-telephone-260nw-1721247196.jpg" width="40" height="40">
+                    <ul>
+                        Call Today:
+                        <li>078888888 ; 07999999 </li>
+                    </ul>
+                </span>
+                <span>
+                    <img src="https://m.media-amazon.com/images/I/812L5zyAmpL._AC_SX466_.jpg" width="40" height="40">
+                    <ul>
+                        Opening Hours:
+                        <li>6:00am - 7:00pm</li>
+                    </ul>
+                </span>
+            </div>
+            <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" alt="logo img" width="200px" height="70px" class="logo">
+        </div>
+        <div class="third-bar">
+            <nav class=" d-inline-block">
+                <ul class="navbar d-inline-block">
+                    <li class="navitem d-inline-block"><a href="index.html" class="navlink"><img src="img/arrow.png"
+                                width="10" height="10"> Home</a></li>
+                    <li class="navitem d-inline-block"><a href="sales.html" class="navlink"> <img src="img/arrow.png"
+                                width="10" height="10"> Sales</a></li>
+                    <li class="navitem d-inline-block"><a href="index.html" class="navlink"> <img src="img/arrow.png"
+                                width="10" height="10">Products</a></li>
+                    <li class="navitem d-inline-block"><a href="#footer-grid" class="navlink"> <img src="img/arrow.png"
+                                width="10" height="10"> About us</a></li>
+                </ul>
+            </nav>
+            <span class="search-bar d-inline-block">
+                <input> <img src="https://cdn2.iconfinder.com/data/icons/font-awesome/1792/search-512.png" width="30" height="30">
+            </span>
+        </div>
+    </header>
+    <main>
+
+      
+        <form id="createLocationForm">
+            <fieldset>
+                <legend>Create New Location </legend>
+                <label>Location Name : </label> <input type="text" pattern="[-a-zA-Z]*" id="locationName" class='input'required placeholder="please enter letters only"><br><br>
+                <label>Max No of Customer Per Hour : </label> <input type="number" step="0.0001" min="0" id="maxCust" class="input" placeholder="please enter numbers only"required><br><br>
+                <label>Min No of Customer Per Hour : </label> <input type="number" step="0.0001" min="0" id="minCust" class="input" placeholder="please enter numbers only" required><br><br>
+                <label>Avg Cookies : </label> <input type="number" id="avgCookie" step="0.0001" min="0" class="input" placeholder="please enter numbers only" required><br><br>
+                <button type="submit" id="submit" class="btn" >Create</button>
+
+            </fieldset>
+        </form>
+       
+    </main>
+   
+        <script src="java.js"></script>
+
+
+    <footer>
+        <div class="footer-grid">
+            <h3>
+                Other Pages
+            </h3>
+            <div>
+                <a href="index.html" class="pages">HOME</a>
+                <a href="sales.html" class="pages"> Sales</a>
+                <a href="index.html" class="pages">Products </a>
+                <a href="index.html" class="pages">Contact Us</a>
+
+            </div>
+
+        </div>
+        <div class="footer-grid">
+            <h3>
+                SALMON COOKIES
+            </h3>
+            <span>Email : Cookies.salmon@gmail.com</span>
+            <span>Phone NO : 07888888</span>
+           
+
+        </div>
+        <div class="footer-grid">
+            <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png" alt="salmon" width="250">
+
+        </div>
+        <h4 id="copyright"> &copy;2021 Salmon Cookies Inc. All rights reserved. Privacy Policy</h4>
+    </footer>
+
+</body>
+
+</html>
